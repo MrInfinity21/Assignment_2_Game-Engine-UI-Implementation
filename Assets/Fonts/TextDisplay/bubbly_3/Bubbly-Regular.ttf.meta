@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f11de52637cdf8a4bb38b68d2e5cf96a
+guid: 5c2d26f9a43d65341bca83d3e37970a3
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Bazinga!
+  - Bubbly
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
