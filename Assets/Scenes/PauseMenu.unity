@@ -786,7 +786,7 @@ GameObject:
   - component: {fileID: 953248993}
   - component: {fileID: 953248992}
   m_Layer: 5
-  m_Name: OptionButtonText (TMP)
+  m_Name: SettingsButtonText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
   m_sharedMaterial: {fileID: 1492117752749606783, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
@@ -922,7 +922,6 @@ GameObject:
   - component: {fileID: 1132847177}
   - component: {fileID: 1132847176}
   - component: {fileID: 1132847175}
-  - component: {fileID: 1132847178}
   - component: {fileID: 1132847179}
   m_Layer: 5
   m_Name: ExitGameButton
@@ -994,7 +993,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1132847176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561382679}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1132847176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,28 +1044,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132847173}
   m_CullTransparentMesh: 1
---- !u!95 &1132847178
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132847173}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 47827fe042a411a478af9ce77982b2f0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1132847179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,7 +1072,6 @@ GameObject:
   - component: {fileID: 1197287872}
   - component: {fileID: 1197287871}
   - component: {fileID: 1197287870}
-  - component: {fileID: 1197287873}
   - component: {fileID: 1197287874}
   m_Layer: 5
   m_Name: ResumeButtons
@@ -1155,7 +1143,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1197287871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561382679}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1197287871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,28 +1194,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197287868}
   m_CullTransparentMesh: 1
---- !u!95 &1197287873
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197287868}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fa3c489493b933d49b077f2788ed33ab, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1197287874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1656,7 +1634,6 @@ GameObject:
   - component: {fileID: 1835411430}
   - component: {fileID: 1835411429}
   - component: {fileID: 1835411428}
-  - component: {fileID: 1835411431}
   - component: {fileID: 1835411432}
   m_Layer: 5
   m_Name: ReturnToMainButton
@@ -1728,7 +1705,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1835411429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561382679}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ReturnToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1835411429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,28 +1756,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835411426}
   m_CullTransparentMesh: 1
---- !u!95 &1835411431
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835411426}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab7b502c9a546b04ea9ee9cfc694911a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1835411432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1974,7 +1941,7 @@ GameObject:
   - component: {fileID: 2024156620}
   - component: {fileID: 2024156621}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: SettingsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2010,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2024156618}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 561382679}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: SettingsMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2024156618
 MonoBehaviour:
   m_ObjectHideFlags: 0

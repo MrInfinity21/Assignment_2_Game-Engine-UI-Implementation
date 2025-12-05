@@ -269,6 +269,7 @@ MonoBehaviour:
   _buttonText: {fileID: 323637757}
   _normalColor: {r: 0, g: 0, b: 0, a: 1}
   _hoverColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!95 &308204221
 Animator:
   serializedVersion: 7
@@ -350,8 +351,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "NEW \nGAME"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
-  m_sharedMaterial: {fileID: -7821045715310751364, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
+  m_sharedMaterial: {fileID: 1492117752749606783, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -375,8 +376,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -385,9 +386,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 8192
   m_textAlignment: 65535
-  m_characterSpacing: -10.06
+  m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 60.6
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -714,6 +715,7 @@ MonoBehaviour:
   _buttonText: {fileID: 479712587}
   _normalColor: {r: 0, g: 0, b: 0, a: 1}
   _hoverColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!95 &360840175
 Animator:
   serializedVersion: 7
@@ -916,8 +918,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EXIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
-  m_sharedMaterial: {fileID: -7821045715310751364, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
+  m_sharedMaterial: {fileID: 1492117752749606783, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -941,8 +943,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -951,7 +953,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 8192
   m_textAlignment: 65535
-  m_characterSpacing: -16.13
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1053,8 +1055,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
-  m_sharedMaterial: {fileID: -7821045715310751364, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
+  m_sharedMaterial: {fileID: 1492117752749606783, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1078,8 +1080,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1157,7 +1159,7 @@ GameObject:
   - component: {fileID: 740240868}
   - component: {fileID: 740240867}
   m_Layer: 5
-  m_Name: OptionButtonText (TMP)
+  m_Name: SettingsButtonText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,10 +1204,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: OPTIONS
+  m_text: Settings
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
-  m_sharedMaterial: {fileID: -7821045715310751364, guid: ba9e0d1768df8f54782d94b124b353ed, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
+  m_sharedMaterial: {fileID: 1492117752749606783, guid: c0623d838797a1149abbec44b04e8b75, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1229,8 +1231,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1239,7 +1241,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 8192
   m_textAlignment: 65535
-  m_characterSpacing: -13.74
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1316,7 +1318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -232, y: 395}
+  m_AnchoredPosition: {x: -427, y: 434}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786405604
@@ -1381,8 +1383,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.5
-  m_fontSizeBase: 41.5
+  m_fontSize: 76
+  m_fontSizeBase: 76
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1419,7 +1421,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -654.6945, w: 0}
+  m_margin: {x: 0, y: 0, z: -1645.428, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1517,7 +1519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230.7, y: 395}
+  m_AnchoredPosition: {x: -425.7, y: 434}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1696476134
@@ -1582,8 +1584,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.5
-  m_fontSizeBase: 41.5
+  m_fontSize: 76
+  m_fontSizeBase: 76
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1620,7 +1622,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -654.6945, w: 0}
+  m_margin: {x: 0, y: 0, z: -1084.366, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1649,7 +1651,7 @@ GameObject:
   - component: {fileID: 1821088842}
   - component: {fileID: 1821088843}
   m_Layer: 5
-  m_Name: OptionButton
+  m_Name: SettingsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1720,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1821088840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2034443507}
+        m_TargetAssemblyTypeName: MainMenuButtons, Assembly-CSharp
+        m_MethodName: SettingsMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1821088840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,6 +1786,7 @@ MonoBehaviour:
   _buttonText: {fileID: 740240867}
   _normalColor: {r: 1, g: 1, b: 1, a: 1}
   _hoverColor: {r: 0, g: 0, b: 0, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!95 &1821088843
 Animator:
   serializedVersion: 7
@@ -2034,6 +2049,7 @@ MonoBehaviour:
   _buttonText: {fileID: 538054704}
   _normalColor: {r: 0, g: 0, b: 0, a: 1}
   _hoverColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!95 &1971091359
 Animator:
   serializedVersion: 7

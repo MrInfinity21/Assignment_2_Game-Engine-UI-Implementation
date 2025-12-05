@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OptionMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class OptionMenu : MonoBehaviour
     public Toggle _subtitlesToggle;
 
     public GameObject _confirmPopup;
+
+    private string _backPauseMenu;
 
     private GameSettings pendingSettings = new GameSettings();
     private GameSettings currentSettings = new GameSettings();
@@ -84,6 +87,11 @@ public class OptionMenu : MonoBehaviour
 
     private void ReturnToPauseMenu()
     {
-        Debug.Log("Loading previous scene.");
+        SceneManager.LoadScene(2);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

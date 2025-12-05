@@ -4,17 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    private string inGameScene;
-    private string mainMenuScene; 
+  
 
     public void ResumeGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
 
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void SettingsMenu()
+    {
+        SceneManager.LoadScene(3);
     }
     public void ExitGame()
     {
