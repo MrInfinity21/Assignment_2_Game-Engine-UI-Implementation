@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class ChangeEmissive : MonoBehaviour
 {
-    public GameObject textMesh;
+
     public MeshRenderer screenRenderer;
     public Material normalMaterial;
     public Material emissiveMaterial;
@@ -31,7 +31,6 @@ public class ChangeEmissive : MonoBehaviour
     private void TurnOnComputer()
     {
         ChangeScreenMaterial(emissiveMaterial);
-        if (textMesh != null) textMesh.SetActive(true);
         isOn = true;
 
     }
@@ -39,7 +38,6 @@ public class ChangeEmissive : MonoBehaviour
     private void TurnOffComputer()
     {
         ChangeScreenMaterial(normalMaterial);
-        if (textMesh != null) textMesh.SetActive(false);
         isOn = false;
 
     }
