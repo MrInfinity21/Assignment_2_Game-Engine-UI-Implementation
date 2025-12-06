@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenuButtons : MonoBehaviour
 {
-   
+    public GameObject _exitConfirmPanel;
 
     public void StartNewGame()
     {
@@ -14,17 +14,23 @@ public class MainMenuButtons : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    /*public void CreditsScene()
-    {
-        SceneManager.LoadScene(5);
-    }*/
-
     public void ExitGame()
+    {
+        _exitConfirmPanel.SetActive(true);
+    }
+  
+
+    public void ConfirmYes()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
-Application.Quit();
+        Application.Quit();
 #endif
+    }
+
+    public void ConfirmNo()
+    {
+        _exitConfirmPanel.SetActive(false);
     }
 }
