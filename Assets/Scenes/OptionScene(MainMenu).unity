@@ -1335,8 +1335,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4293454056
+  m_fontColor: {r: 0.90943396, g: 0.90943396, b: 0.90943396, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1542,6 +1542,7 @@ GameObject:
   - component: {fileID: 1051274545}
   - component: {fileID: 1051274544}
   - component: {fileID: 1051274543}
+  - component: {fileID: 1051274546}
   m_Layer: 5
   m_Name: NoButton
   m_TagString: Untagged
@@ -1663,6 +1664,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051274541}
   m_CullTransparentMesh: 1
+--- !u!114 &1051274546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051274541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c4dadc166f45143a57f2d58c52c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonText: {fileID: 1786933108}
+  _normalColor: {r: 0, g: 0, b: 0, a: 1}
+  _hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &1070544104
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,6 +2398,7 @@ GameObject:
   - component: {fileID: 1418570836}
   - component: {fileID: 1418570835}
   - component: {fileID: 1418570834}
+  - component: {fileID: 1418570837}
   m_Layer: 5
   m_Name: YesButton
   m_TagString: Untagged
@@ -2484,7 +2502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a747e626c5fdf7249987e20e959da535, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7afcb9b5346ba0d4eab783dc51d6096b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2502,6 +2520,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418570832}
   m_CullTransparentMesh: 1
+--- !u!114 &1418570837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418570832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c4dadc166f45143a57f2d58c52c9b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonText: {fileID: 1254340071}
+  _normalColor: {r: 0, g: 0, b: 0, a: 1}
+  _hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  _pressedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &1419547070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,14 +2672,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5622641, g: 0.5622641, b: 0.5622641, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a747e626c5fdf7249987e20e959da535, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f712da17680c9d740a84191cee8ce51d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
